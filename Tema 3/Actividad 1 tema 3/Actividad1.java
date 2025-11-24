@@ -20,8 +20,6 @@ public class Actividad1 {
         else{
             System.out.println("Los dos números son iguales");
         }
-
-        
     }
 
     // 2. Programa que pida un número y diga si es par o impar
