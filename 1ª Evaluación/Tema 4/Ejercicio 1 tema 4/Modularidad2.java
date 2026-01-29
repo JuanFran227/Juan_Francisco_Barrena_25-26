@@ -305,46 +305,35 @@ public class Modularidad2 {
 
 
         //Número mayor y número menor Ejercicio 2
-        System.out.print("Introduce el primer número ");
-        int num1 = sc.nextInt();
+        
 
-        System.out.print("Introduce el segundo número ");
-        int num2 = sc.nextInt();
-
-        int mayor = numMayor(num1, num2);
-        int menor = numMenor(num1, num2);
-
-        System.out.println("El número mayor es: " + mayor);
-        System.out.println("El número menor es: " + menor);
+        // Ejercicio 3
 
 
-        //Edades Ejercicio 3
-        String resultado = edades();
-        System.out.println("La edad es: " + resultado);
-
-
-
+        
         //Tres métodos llamar solo ejecutarprograma  Ejercicio 4
-        ejecutarPrograma();
+        
 
 
 
         //Áreas del cuadrado, rectángulo y círculo Ejercicio 5
-        menu();
+        
 
         //Cifrar palabra intercambiando letras  Ejercicio 6
 
 
         //Calcular la media y mostrar el resultado Ejercicio 7
-        System.out.println("EScribe tres números para calcular la media: ");
-        int nota1 = sc.nextInt();
-        int nota2 = sc.nextInt();
-        int nota3 = sc.nextInt();
-        
-        double calificacion1 = pedirnota(nota1);
-        double calificacion2 = pedirnota(nota2);
-        double calificacion3 = pedirnota(nota3);
 
-        double media = media();
+
+        // Ejercicio 8
+
+
+
+        //Ejercicio 9
+
+
+
+        //Ejercicio 10
+        
     }
 }

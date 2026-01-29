@@ -242,7 +242,7 @@ public class Ejercicio1 {
     entrada: [2, 4, 1, 3, 9, 3, 1, 1], ‘d’ → salida: [9, 4, 3, 3, 2, 1, 1]*/
 
 
-    /*Realiza una método que dado un array de números enteros
+    /*20 Realiza una método que dado un array de números enteros
     positivos mayor o igual que 1 (naturales) lo ordene según el
     número de divisores que tiene cada número.
     Ejemplo:el número 6 (tiene cuatro divisores: 1, 2, 3, 6), el número
