@@ -41,11 +41,11 @@ public class Actividad1 {
         System.out.println("20:50\tSistemas\tLenguaje\tEmpresa\tProgramación\tBases");
 
         //Para la pirámide hacemos estos códigos
-        System.out.println("        *");
-        System.out.println("       ***");
-        System.out.println("      *****");
-        System.out.println("     *******");
-        System.out.println("    *********");
+        System.out.println("    *");
+        System.out.println("   ***");
+        System.out.println("  *****");
+        System.out.println(" *******");
+        System.out.println("*********");
 
         //Para la pirámide hueca se hace esto
         System.out.println("    *");
@@ -55,7 +55,7 @@ public class Actividad1 {
         System.out.println("*********");
 
         //Para el vértice hacia abajo
-        System.out.println("********");
+        System.out.println("*********");
         System.out.println(" *******");
         System.out.println("  *****");
         System.out.println("   ***");

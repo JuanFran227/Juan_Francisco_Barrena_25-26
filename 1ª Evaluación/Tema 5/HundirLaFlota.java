@@ -63,14 +63,85 @@ public class HundirLaFlota{
     ● Código comentado
     ● Uso correcto de funciones
     ● Claridad y orden en el código */
+
+
+
+    //Esta función crea el tablero
     public static String[][] creartablero(){
         String[][] tablero = new String[10][10];
-        for(){
-            for(){
-
+        for(int i = 0; i < tablero.length; i++){
+            for(int j = 0; j < tablero[i].length; j++){
+                tablero[i][j] = "~";
             }
         }return tablero;
     }
+
+
+    //Esta función muestra el tablero 
+    public static void mostrartablero(String[][] tablero){
+        for(int i = 0; i < tablero.length; i++){
+            for(int j = 0; j < tablero[i].length; j++){
+                System.out.println(tablero[i][j]);
+            }
+        }
+    }
+
+    
+
+    //Esta función genera coordenadas aleatorias
+    public static int[] generarcoordenadas(int fila, int columna){
+        int[] coordenadas = new int[2];
+        coordenadas[0] = fila;
+        coordenadas[1] = columna;
+        return coordenadas;
+    }
+
+
+    //Esta función coloca a los barcos de forma aleatoria en el tablero
+    public static void colocarbarcos(String[][] tablero){
+        int fila = (int) (Math.random() * 10);
+        int columna = (int) (Math.random() * 10);
+        if (tablero[fila][columna] == "B") {
+            colocarbarcos(tablero);
+        } else {
+            tablero[fila][columna] = "B";
+        }
+    }
+
+
+    //Esta función comprueba si hay barcos sin hundir
+    public static boolean haybarcos(String[][] tablero){
+        for(int i = 0; i < tablero.length; i++){
+            for(int j = 0; j < tablero[i].length; j++){
+                if (tablero[i][j] == "B") {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    
+
+    //Esta función determina si se ha acertado o no
+    public static void barcotocado(String[][] tablero){
+        int fila = (int) (Math.random() * 10);
+        int columna = (int) (Math.random() * 10);
+        if (tablero[fila][columna] == "B") {
+            tablero[fila][columna] = "X";
+            System.out.println("Barco tocado");
+        }else if (tablero[fila][columna] == "X"){
+            barcotocado(tablero);
+            System.out.println("Barco tocado");
+        }else if (tablero[fila][columna] == "O"){
+            barcotocado(tablero);
+            System.out.println("Agua");
+        }else if (tablero[fila][columna] == "~"){
+            tablero[fila][columna] = "O";
+            System.out.println("Agua");
+        }
+    }   
+
+    
 
     public static void main(String[] args) throws Exception{
         

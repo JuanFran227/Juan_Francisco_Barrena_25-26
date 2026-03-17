@@ -25,9 +25,9 @@ public class Actividad2 {
         int resta = numero1 - numero2;
         int multiplicacion = numero1 * numero2;
         //Para que nos lo muestre en consola
-        System.out.println("Suma" + suma);
-        System.out.println("Resta" + resta);
-        System.out.println("multiplicación" + multiplicacion);
+        System.out.println("Suma: " + suma);
+        System.out.println("Resta: " + resta);
+        System.out.println("multiplicación: " + multiplicacion);
 
 
         //La raíz cuadrada
@@ -35,7 +35,7 @@ public class Actividad2 {
         double numero = sc.nextDouble();
 
         double raiz = Math.sqrt(numero);
-        System.out.println("La raíz cuadrada es" + raiz);
+        System.out.println("La raíz cuadrada es: " + raiz);
         
         
         //Potencia y número 
@@ -51,7 +51,7 @@ public class Actividad2 {
         System.out.println("Introduce el radio del círculo");
         Double radiocirculo =sc.nextDouble();
         Double area = Math.PI * Math.pow(radiocirculo, 2);
-        System.out.println("El área es" + area);
+        System.out.println("El área es: " + area);
         
         
 

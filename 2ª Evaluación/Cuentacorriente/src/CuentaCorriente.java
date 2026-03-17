@@ -28,7 +28,7 @@ public class CuentaCorriente {
 
 
 
-    public void sacardinero(int retirarcantidad){
+    public void sacardinero(double retirarcantidad){
         if (Saldo >= retirarcantidad) {
             Saldo -= retirarcantidad;
             System.out.println("Has retirado " + retirarcantidad + " €");
@@ -48,7 +48,7 @@ public class CuentaCorriente {
         System.out.println("Información de la cuenta: ");
         System.out.println("IBAN: " + IBAN);
         System.out.println("Saldo: " + Saldo);
-        System.out.println("Cliente: " + titular.getnombre() + " " + titular.getapellidos());
+        System.out.println(titular.getnombre() + " " + titular.getapellidos());
     }
 
 
@@ -58,10 +58,10 @@ public class CuentaCorriente {
     }
 
 
-    public void traspasardinero(CuentaCorriente otracuenta, double traspasocantidad){
+    public void traspasardinero(CuentaCorriente cuentaorigen, CuentaCorriente cuentadestino, double traspasocantidad){
         if (Saldo >= traspasocantidad) {
             Saldo = Saldo - traspasocantidad;
-            otracuenta.Saldo = otracuenta.Saldo + traspasocantidad;
+            cuentaorigen.Saldo = cuentaorigen.Saldo + traspasocantidad;
             System.out.println("El traspaso de dinero ha sido efecturado con éxito. ");
         }else{
             System.out.println("No se ha podido efectuar el traspaso. ");

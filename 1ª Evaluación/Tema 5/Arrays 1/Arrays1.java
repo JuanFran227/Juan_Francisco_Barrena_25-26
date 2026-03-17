@@ -12,7 +12,7 @@ public class Arrays1 {
      * mostraremos por pantalla.
      */
     public static void Ejercicio1() {
-        System.out.println("Introduce un número ");
+        System.out.println("Introduce un número");
         int[] a = new int[sc.nextInt()];
 
         for (int i = 0; i < a.length; i++) {
@@ -42,6 +42,7 @@ public class Arrays1 {
             b[i] = a[i];
         }
 
+
         // Mostramos los valores de ambos Arrays
         System.out.println("El Array de a es: ");
         for (int i = 0; i < a.length; i++) {
@@ -68,7 +69,7 @@ public class Arrays1 {
         // ----- 1. DECLARACIÓN DE VARIABLES -----
 
         int[] a = new int[50]; // Array muy amplio por si se mete muchos números
-        int numero = 0; // Variable para guardar el número introducido
+        int numero = sc.nextInt(); // Variable para guardar el número introducido
         int contador = 0; // Contador para saber cuántos números válidos hay
 
         // ----- 2. ENTRADA DE DATOS -----
@@ -435,6 +436,7 @@ public class Arrays1 {
     public static void Ejercicio13() {
         Random random = new Random();
         int[][] matriz = new int[3][3];
+        
 
         // Colocar exactamente 3 unos sin solapamiento
         int colocados = 0;
@@ -469,7 +471,7 @@ public class Arrays1 {
      */
 
     public static void Ejercicio14() {
-
+        
     }
 
 

@@ -24,15 +24,13 @@ public class Actividad1 {
 
     // 2. Programa que pida un número y diga si es par o impar
     public static void ejercicio2() {
-        System.out.println("Pon un número");
+        System.out.println("Escriba un número");
         int numero = sc.nextInt();
-        if (numero % 2 == 0){
-            System.out.println("El número" + numero + "es par");
+        if (numero % 2 == 0) {
+            System.out.println("El número es par");
+        } else {
+            System.out.println("El número es impar");
         }
-        else{
-            System.out.println("El número" + numero + "es impar");
-        }
-
     }
 
     

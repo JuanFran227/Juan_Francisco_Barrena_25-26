@@ -274,7 +274,6 @@ public class Ejercicio1 {
     entrada 5, 5 → salida: true */
 
 
-    /* */
 
 
 

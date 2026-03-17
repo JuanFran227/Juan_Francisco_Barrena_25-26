@@ -9,24 +9,25 @@ public class Bucles{
     
     public static void ejercicio1(){
     /*while */
-    int i;
-    i = 1;
+    int i = 1;
     while (i <= 100) {
-        System.out.print(i +" ");
+        System.out.println(i + " ");
         i++;
     }
+
     /*do while */
     int j = 1;
     do {
-        System.out.print(j + " ");
+        System.out.println(j + " ");
         j++;
     } while (j <= 100);
+
     
     /*for */
-    for(int f = 1; f <= 100; f++){
-        System.out.print(f + " ");
+    for(int h = 1; h <= 100; h++){
+        System.out.println(h + " ");
+        h++;
     }
-    System.out.println();
 }
 
 
@@ -35,15 +36,14 @@ public class Bucles{
 
     public static void ejercicio2(){
         
-        System.out.println("Pon un número positivo ");
-        int valor = sc.nextInt();
-        if(valor > 0){
-            for(int i=1;i<=valor;i++){
+        System.out.println("Pon un número");
+        int numero = sc.nextInt();
+        if (numero >= 1) {
+            for(int i = 1; i < numero; i++){
                 System.out.println(i);
             }
-        }
-        else{
-            System.out.println("El número no es positivo ");
+        } else {
+            System.out.println("El número no es positivo");
         }
       
     }
@@ -60,7 +60,7 @@ public class Bucles{
             suma = suma + valor;
         }
         System.out.println("La suma es " + suma);
-        System.out.println("La media es " + suma/10);        
+        System.out.println("La media es " + suma/10);
 
     }
 
@@ -81,7 +81,7 @@ public class Bucles{
         if(!intento.equalsIgnoreCase(nombre)){
             System.out.println("El nombre no es correcto, pregúntame cual es ");
         }
-        System.out.println("Muy bien, mi nombre es " + nombre);
+        System.out.println("Muy bien, mi nombre es: " + nombre);
         }
 
 
@@ -248,7 +248,7 @@ public class Bucles{
 
     public static void main(String[] args){
         //ejercicio1();
-        //ejercicio2();
+        ejercicio2();
         //ejercicio3();
         //ejercicio4();
         //ejercicio5();
