@@ -9,10 +9,10 @@ public class Arquero extends Personaje{
         super(nombre, nivel, vida, velocidad);
         this.precision = precision;
     }
-    public int GetPrecision(){
+    public int getPrecision(){
         return precision;
     }
-    public void SetPrecision(int precision){
+    public void setPrecision(int precision){
         this.precision = precision;
     }
 
@@ -20,13 +20,19 @@ public class Arquero extends Personaje{
     //Sobreescribir atacar
     @Override
     public boolean atacar(Personaje personajeObjetivo){
-        
+        int daño = (nivel * (precision / 100));
+        return personajeObjetivo.recibirgolpe(daño);
     }
 
+    //Se sobreescribe el propio método recibir golpe porque a los arqueros se les hace el doble de daño
+    @Override
+    public boolean recibirgolpe(int daño){
+        return super.recibirgolpe(daño * 2);
+    }
 
     //Sobreescribir el ToString
     @Override
     public String toString(){
-        return "Arquero: " + "Nombre- " +  GetNombre()+ "||Nivel- " + GetNivel() + "||Vida" + GetVida() + "||Velocidad- " + GetVelocidad() + "||Precisión- " + GetPrecision();
+        return "Arquero: " + "Nombre- " +  getNombre()+ "||Nivel- " + getNivel() + "||Vida" + getVida() + "||Velocidad- " + getVelocidad() + "||Precisión- " + getPrecision();
     }
 }

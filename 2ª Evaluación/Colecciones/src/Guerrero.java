@@ -9,10 +9,10 @@ public class Guerrero extends Personaje{
         super(nombre, nivel, vida, velocidad);
         this.fuerza = fuerza;
     }
-    public int GetFuerza(){
+    public int getFuerza(){
         return fuerza;
     }
-    public void SerFuerza(int fuerza){
+    public void setFuerza(int fuerza){
         this.fuerza = fuerza;
     }
 
@@ -20,13 +20,14 @@ public class Guerrero extends Personaje{
     //Sobreescribir atacar
     @Override
     public boolean atacar(Personaje personajeObjetivo){
-        
+        int daño = (nivel * fuerza) / vida;
+        return personajeObjetivo.recibirgolpe(daño);
     }
 
 
     //Sobreescribir el ToString
     @Override
     public String toString(){
-        return "Guerrero: " + "Nombre- " + GetNombre() + "||Nivel- " + GetNivel() + "||Vida- " + GetVida() + "||Velocidad- " + GetVelocidad() + "||Fuerza- " + GetFuerza();
+        return "Guerrero: " + "Nombre- " + getNombre() + "||Nivel- " + getNivel() + "||Vida- " + getVida() + "||Velocidad- " + getVelocidad() + "||Fuerza- " + getFuerza();
     }
 }

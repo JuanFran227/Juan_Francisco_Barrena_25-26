@@ -18,43 +18,41 @@ public abstract class Personaje {
     }
 
     //Métodos Getters Y Setters
-    public String GetNombre(){
+    public String getNombre(){
         return nombre;
     }   
-    public void SetNombre(String nombre){
+    public void setNombre(String nombre){
         this.nombre = nombre;
     } 
 
-    public int GetNivel(){
+    public int getNivel(){
         return nivel;
     }
-    public void SetNivel(int nivel){
+    public void setNivel(int nivel){
         this.nivel = nivel;
     }
 
-    public int GetVida(){
+    public int getVida(){
         return vida;
     }
-    public void SetVida(int vida){
+    public void setVida(int vida){
         this.vida = vida;
     }
 
-    public int GetVelocidad(){
+    public int getVelocidad(){
         return velocidad;
     }
-    public void SetVelocidad(int velocidad){
+    public void setVelocidad(int velocidad){
         this.velocidad = velocidad;
     }
 
 
-    //Función para atacar, pero implementada en las subclases
+    //Función ABSTRACTA para atacar, pero implementada en las subclases
 
-    public abstract boolean atacar(Personaje PersonajeAtacado){
-        
-    }
+    public abstract boolean atacar(Personaje personajeAtacado);
 
     //Recibir golpes(daño)
-    public boolean recibegolpe(int daño){
+    public boolean recibirgolpe(int daño){
         vida -= daño;
 
         if (vida <= 0) {
