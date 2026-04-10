@@ -1,19 +1,19 @@
+import java.io.IOException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.io.IOException;
 
-public class Funciones{
-
+public class Operaciones {
+    
     //Crear el archivo
     public void crearDirectorio(){
         Path rutaDirectorio = Paths.get("Dataset");
         Path rutaArchivo = Paths.get("Dataset/Archivo.txt");
 
         try {
-            if (Files.exists(rutaDirectorio)) { //Comprobamos si existe
+            if (!Files.exists(rutaDirectorio)) { //Comprobamos si existe
                 System.out.println("Este directorio ya existe");
             } else { //Si no existe lo creamos
                 Files.createDirectories(rutaDirectorio);
@@ -110,8 +110,8 @@ public class Funciones{
 
 
     //Vamos iterando el archivo para ver que contiene
-    public void ContenidoDirectorio(){
-        Path ruta = Paths.get("Dataset/Archivo.txt");
+    public void contenidoDirectorio(){
+        Path ruta = Paths.get("");
 
         //Creamos el flujo para revisar los ficheros
         try (DirectoryStream<Path> flujoDatos = Files.newDirectoryStream(ruta)){
